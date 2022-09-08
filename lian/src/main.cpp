@@ -4,10 +4,23 @@
 * describe: none
 ********************************************************************************/
 
-#include "../include/hello.h"
+#include <iostream>
+using namespace std;
+
 
 int main(int argc,char *argv[])
 {
-    ph();
-    return 0;
+	int a[] = {1,2,3,4,5};
+	int *b = a;
+	int *c = new int[8];
+	for(int i = 0; i<5; i++)
+	{
+		*c = *b;
+		c++;
+		b++;
+	}
+
+
+	return 0;
 }
+
